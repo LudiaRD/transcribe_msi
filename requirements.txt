@@ -1,0 +1,4 @@
+%%writefile requirements.txt
+streamlit
+git+https://github.com/openai/whisper.git
+python-docx
