@@ -76,5 +76,6 @@ if uploaded_file is not None:
                                file_name = docx_filename,
                                mime = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
                               )
- else:
-     st.info("Silakan upload file audio atau video terlebih dahulu.")
+     
+    else:
+          st.info("Silakan upload file audio atau video terlebih dahulu.")
