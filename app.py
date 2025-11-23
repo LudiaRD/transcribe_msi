@@ -65,16 +65,16 @@ if uploaded_file is not None:
             docx_buffer.seek(0)
             docx_filename = (uploaded_file.name.rsplit(".", 1)[0] or "transkripsi") + ".docx"
 
-             st.subheader("Unduh Hasil")
-             st.download_button("⬇️ Download .txt",
-                                data = text,
-                                file_name = txt_filename,
-                                mime = "text/plain"
-                               )
-             st.download_button("⬇️ Download .docx (Word)",
-                                data = docx_buffer,
-                                file_name = docx_filename,
-                                mime = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-                               )
+            st.subheader("Unduh Hasil")
+            st.download_button("⬇️ Download .txt",
+                               data = text,
+                               file_name = txt_filename,
+                               mime = "text/plain"
+                              )
+            st.download_button("⬇️ Download .docx (Word)",
+                               data = docx_buffer,
+                               file_name = docx_filename,
+                               mime = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                              )
  else:
      st.info("Silakan upload file audio atau video terlebih dahulu.")
