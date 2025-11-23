@@ -19,9 +19,9 @@ st.markdown("""
 col1, col2 = st.columns(2)
 with col1:
     model_name = st.selectbox("Pilih model Whisper",
-                              ["tiny", "base", "small", "medium"],
+                              ["tiny", "small", "base"],
                               index = 2,
-                              help = "Semakin besar model, makin akurat tapi lebih lambat."
+                              help = "Semakin besar model, makin akurat tapi lebih lambat dan membutuhkan GPU."
                              )
 with col2:
     language = st.text_input("Kode bahasa audio (mis. 'id', 'en')", value = "id")
